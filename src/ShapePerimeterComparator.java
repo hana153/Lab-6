@@ -36,7 +36,7 @@ public class ShapePerimeterComparator implements Comparator<Shape>
 		if (s1.getPerimeter() < s2.getPerimeter()) {
 			return -1;
 		}
-		if (s1.getPerimeter() > s2.getPerimeter()) {
+		else if (s1.getPerimeter() > s2.getPerimeter()) {
 			return 1;
 		}
 		return 0;

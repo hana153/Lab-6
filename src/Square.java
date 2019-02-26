@@ -6,10 +6,6 @@ public class Square extends Rectangle
 	{
 		super(id, size, size);
 		
-		this.sideLengths.add(size);
-		this.sideLengths.add(size);
-		this.sideLengths.add(size);
-		this.sideLengths.add(size);
 		
 	}
 	

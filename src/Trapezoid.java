@@ -29,6 +29,11 @@ public class Trapezoid extends Polygon
 	{
 		// TODO: complete this...
 		super(id);
+		this.leftSide = leftSide;
+		this.rightSide = rightSide;
+		this.topBase = topBase;
+		this.bottomBase = bottomBase;
+		
 		sideLengths.add(leftSide);
 		sideLengths.add(rightSide);
 		sideLengths.add(topBase);
@@ -59,7 +64,8 @@ public class Trapezoid extends Polygon
 		double g = 2 * c * (b - a);
 
 		// Calculate:
-		return e * c * Math.sqrt(1 - Math.pow(f/g, 2));
+		double h = e * c * Math.sqrt(1 - Math.pow(f/g, 2));
+		return h;
 	}
 
 	/**
