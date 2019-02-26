@@ -30,13 +30,14 @@ public abstract class Polygon extends Shape
      * @return The perimeter of the polygon.
      */
     @Override
-	public double getPerimeter()
+    public double getPerimeter()
     {
-    	// TODO: complete this...
-    	double sum = 0;
-    	for (int i = 0; i < sideLengths.size(); ++i) {
-    		sum += sideLengths.get(i);
-    	}
-    	return sum;
+        // TODO: complete this...
+        double sum = 0;
+        for (int i = 0; i < sideLengths.size(); ++i)
+        {
+            sum += sideLengths.get(i);
+        }
+        return sum;
     }
 }
