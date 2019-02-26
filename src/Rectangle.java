@@ -12,6 +12,11 @@ public class Rectangle extends Polygon
 		super(id);
 		this.height = height;
 		this.width = width;
+		
+		this.sideLengths.add(height);
+		this.sideLengths.add(height);
+		this.sideLengths.add(width);
+		this.sideLengths.add(width);
 	}
 	
 	//returns the area that is calculated by: height * width

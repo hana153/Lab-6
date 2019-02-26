@@ -96,7 +96,21 @@ public abstract class Shape implements Comparable<Shape>
 	public int compareTo(Shape s)
 	{
 		// TODO: complete this...
-		return 0;
+		if (getArea() > s.getArea()) {
+			return 1;
+		}
+		else if (getArea() < s.getArea()) {
+			return -1;
+		}
+		else {
+			if (getPerimeter() > s.getPerimeter()) {
+				return 1;
+			}
+			else if (getPerimeter() < s.getPerimeter()) {
+				return -1;
+			}
+			return 0;
+		}
 	}
 
 	/**
@@ -131,6 +145,6 @@ public abstract class Shape implements Comparable<Shape>
 	public String toString()
 	{
 		// TODO: complete this...
-		return getShapeType() + "\t ID = " + getId() + "\t area = " + getArea() +  "\t perimeter = " + getPerimeter();
+		return String.format("%s\t ID = %s\t area = %.3f\t perimeter = %.3f3", getShapeType(), getId(), getArea(), getPerimeter());
 	}
 }

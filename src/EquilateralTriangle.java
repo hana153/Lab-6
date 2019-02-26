@@ -23,7 +23,9 @@ public class EquilateralTriangle extends Polygon
 	{
 		// TODO: complete this...
 		super(id);
-		sideLengths.add(sideLength);
+		this.sideLengths.add(sideLength);
+		this.sideLengths.add(sideLength);
+		this.sideLengths.add(sideLength);
 	}
 
 	/**
