@@ -24,7 +24,7 @@ public class ShapeSorter
 	public ShapeSorter()
 	{
 		// TODO: complete this...
-		ArrayList<Shape> shapes = new ArrayList<Shape>();
+		shapes = new ArrayList<Shape>(); 
 	}
 
 	/**
@@ -75,7 +75,8 @@ public class ShapeSorter
 		// TODO: complete this...
 		String print = "";
 		for (int i = 0; i < shapes.size(); ++i) {
-			print += (shapes.get(i)).toString();
+			print += (shapes.get(i)).toString() + "\n";
+			
 		}
 		return print;
 	}
